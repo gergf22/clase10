@@ -207,3 +207,30 @@ footer {
         right: 10px;
     }
 }
+
+@media screen and (max-width: 480px){
+    .h1-resp{
+        font-size: 25px;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    .superman1, .harley{
+        display: none;
+    }
+
+    .superman2{
+        display: block;
+    }
+
+    .derechos p{
+        font-size: 10px;
+
+    }
+
+    footer img{
+        width: 45px;
+    }
+}
