@@ -27,25 +27,34 @@ header p {
     z-index: 10;
 }
 
-main {
-    width: 1024px;
-    margin: 0 auto;
-}
-.box {
-    display: inline-block;
-    width: 300px;
-    margin: 150px 10px;
-    position: relative;
-    box-shadow: 0px 3px 7px -3px rgb(0 0 0);
-    
+.h1-resp{
+    display: none;
 }
 
-.batman-top {
+main {
+    display: flex;
+    flex-grow: 300px;
+    justify-content: space-around;
+    margin: auto;
+    width: 90vw;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 40px 10px;
+    border-radius: 5px;
+}
+
+.batman-top, .harley-top{
+    align-items: start;
     background-image: url(../img/fondo1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: 190px;
-    border-radius: 5px;
 }
 
 .corazon {
@@ -53,24 +62,30 @@ main {
 }
 
 .box-bottom {
-    padding: 40px 40px;
+    align-items: center;
     background-color:#F3F3F3;
-    
+    box-shadow: 0px 3px 7px -3px rgb(0 0 0);
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    justify-content: space-around;    
 }
 
 .selfie {
-    position: absolute;
-    width: 125px;
-    top: 130px;
-    left: 87.5px;
+    align-self: center;
+    top: 81px;
+    position: relative;
     border-radius: 65px;
     box-shadow: 0px 3px 7px -3px rgb(0 0 0);
 }
 
 .box h2 {
-    text-align: center;
-    margin: 40px 0 20px;
-    font-size: 30px;
+    margin-top: 40px;
+    font-size: 30px; 
+}
+
+.box-bottom p{
+    margin: 0 20px;
 
 }
 
@@ -78,25 +93,26 @@ button {
     background-color: #00669F;
     width: 130px;
     height: 48.52px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    position: relative;
-    left: 47.5px;
     color: white;
     border: none;
-
 }
 
 .harley-top {
     background-image: url(../img/fondo2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 190px;
-    border-radius: 5px;
 }
 
+.superman, .mujerM, .mas, footer img {
+    display: none;
+}
+
+
 footer {
+    position: relative;
+    bottom: 0px;
     color: white;
     background-color: #00669F;
     padding: 16px;
 }
+
+
+/* Responsive */
