@@ -46,7 +46,7 @@ main {
     border-radius: 5px;
 }
 
-.batman-top, .harley-top{
+.box-top{
     align-items: start;
     background-image: url(../img/fondo1.png);
     background-repeat: no-repeat;
@@ -74,6 +74,7 @@ main {
 .selfie {
     align-self: center;
     top: 81px;
+    width: 115px;
     position: relative;
     border-radius: 65px;
     box-shadow: 0px 3px 7px -3px rgb(0 0 0);
@@ -97,17 +98,18 @@ button {
     border: none;
 }
 
-.harley-top {
+.harley .box-top {
     background-image: url(../img/fondo2.png);
 }
 
-.superman, .mujerM, .mas, footer img {
+.harley2, .superman, .mujerM, .mas, footer img {
     display: none;
 }
 
 
 footer {
     position: relative;
+    display: flex;
     bottom: 0px;
     color: white;
     background-color: #00669F;
@@ -116,3 +118,92 @@ footer {
 
 
 /* Responsive */
+
+
+    /* tablet */
+
+@media screen and (max-width: 780px) {
+    
+
+    header{
+        background-color: #D1891C;
+        padding: 0;
+    }
+
+    .h1-pc, .batman2, .superman2, .harley1{
+        display: none;
+    }
+
+    .h1-resp {
+        display: block;
+        color: white;
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .mujerM, .superman, .harley2, footer img{
+        display: flex;
+    }
+
+    main{
+        flex-wrap: wrap;
+    }
+
+    .box{
+        width: 45%;
+    }
+
+    .harley{
+        order: 1;
+    }
+
+    .box-top{
+        border-radius: 15px 15px 0 0;
+    }
+
+    .harley .box-top {
+        background-image: url(../img/fondo\ harley\ 2.png);
+    }
+
+    .mujerM .box-top {
+        background-image: url(../img/fondo\ MM.png);
+    }
+
+    .superman .box-top {
+        background-image: url(../img/fondo\ SM.png);
+    }
+    
+    .box-bottom h2 {
+        font-size: 25px;
+    }
+
+    .box-bottom p {
+        font-size: 16px;
+    }
+
+    .mas{
+        background-color: #00669F;
+        border-radius: 20px;
+        color: white;
+        display: inline-block;
+        font-size: 30px;
+        position: fixed;
+        right: 3vw;
+        text-align: center;
+        top: 50vh;
+        width: 36px;
+    }    
+
+
+    footer{
+        justify-content: center;
+    }
+
+
+    footer img{
+        width: 80px;
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+    }
+}
