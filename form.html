@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Heroes-form</title>
+  </head>
+  <body>
+    <header>
+      <p>Descuentos 20%</p>
+    </header>
+    <div class="heroes">
+      <h1 class="h1-pc">Heroes</h1>
+      <h1 class="h1-resp">Card Super Heroes</h1>
+    </div>
+    <main>
+      <div class="conteiner-form">
+        <h1>Añadí tu super!</h1>
+        <form action="contacto.html" method="get">
+          <fieldset class="form-top">
+            <legend>
+              Agregá tu personaje favorito completando las opciones.
+            </legend>
+            <div>
+              <label for="nombre">*Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                class="input" 
+                minlength="5"
+                maxlength="30"
+                oninvalid="setCustomValidity('Por favor, completar correctamente')"/>
+            </div>
+            <div>
+                <label for="especie">*Especie</label>
+                <select name="especie" id="especie" aria-placeholder="Especie" class="input" >
+                    <option value="desconocido">unknown</option>
+                    <option value="humano">Humano</option>
+                    <option value="kriptoniano">Kriptoniano</option>
+                    <option value="amazona">Amazona</option>
+                </select>                
+            </div>
+
+          </fieldset>
+          <fieldset class="form-mid">
+            <div>
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha" class="input" />
+            </div>
+            <div>
+                <label for="foto">Agregar foto</label>
+                <input type="file" name="foto" id="foto" />                
+            </div>
+
+
+          </fieldset>
+          <fieldset class="form-bottom">
+            <textarea
+              name="descripcion"
+              id="descripcion"
+              cols="30"
+              rows="10"
+              placeholder="Descripción"
+            ></textarea>
+            <fieldset>
+              <div class="poderes">
+                <p>Poderes</p>
+                <label for="volar">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="volar"
+                    value="volar"
+                  />
+                  Volar
+                </label>
+                <label for="superinteligencia">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="superinteligencia"
+                    value="superinteligencia"
+                  />
+                  Superinteligencia
+                </label>
+                <label for="rayoLaser">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="rayoLaser"
+                    value="rayoLaser"
+                  />
+                  Vista de rayos láser
+                </label>
+                <label for="billetera">
+                  <input
+                    type="checkbox"
+                    name="poderes"
+                    id="billetera"
+                    value="billetera"
+                  />
+                  Billetera gorda
+                </label>
+              </div>
+              <div>
+                <p>Tipo de personaje</p>
+                <label for="heroe">
+                  <input
+                    type="radio"
+                    name="personaje"
+                    id="heroe"
+                    value="heroe"
+                  />
+                  Heroe / Heroína
+                </label>
+                <label for="villano">
+                  <input
+                    type="radio"
+                    name="villano"
+                    id="villano"
+                    value="villano"
+                  />
+                  Villano / Villana
+                </label>
+              </div>
+            </fieldset>
+          </fieldset>
+          <div>
+            <input type="submit" value="Añadir" class="button" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="derechos">
+        <p>Todos los derechos reservados a FRONT END 1</p>
+      </div>
+      <div><img src="img/github icon.png" alt="Github" /></div>
+    </footer>
+  </body>
+</html>

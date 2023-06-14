@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(main-form.css);
+
 *{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', serif ,sans-serif;
-    font-weight: 400;
 }
 
 header {
     background-color: #1CD1B0;
     padding: 15px 0;
+    font-weight: 400;
 }
 
 header p {
@@ -37,6 +39,7 @@ main {
     justify-content: space-around;
     margin: auto;
     width: 90vw;
+    font-weight: 400;
 }
 .box {
     display: flex;
@@ -102,10 +105,28 @@ button {
     background-image: url(../img/fondo2.png);
 }
 
-.harley2, .superman, .mujerM, .mas, footer img {
+.harley2, .superman, .mujerM, footer img {
     display: none;
 }
 
+.mas{
+        background-color: #00669F;
+        border-radius: 30px;
+        display: inline-block;
+        font-size: 40px;
+        position: fixed;
+        color: white;
+        text-decoration: none;        
+        right: 3vw;
+        text-align: center;
+        top: 50vh;
+        width: 50px;
+}    
+
+.mas:hover{
+    background-color: #001D2D;
+    transition: 0.5s;
+}
 
 footer {
     position: relative;
@@ -113,6 +134,7 @@ footer {
     bottom: 0px;
     color: white;
     background-color: #00669F;
+    font-weight: 400;
     padding: 16px;
 }
 
@@ -180,19 +202,6 @@ footer {
     .box-bottom p {
         font-size: 16px;
     }
-
-    .mas{
-        background-color: #00669F;
-        border-radius: 20px;
-        color: white;
-        display: inline-block;
-        font-size: 30px;
-        position: fixed;
-        right: 3vw;
-        text-align: center;
-        top: 50vh;
-        width: 36px;
-    }    
 
 
     footer{
