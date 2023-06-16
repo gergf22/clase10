@@ -17,7 +17,7 @@
     <main>
       <div class="conteiner-form">
         <h1>Añadí tu super!</h1>
-        <form action="contacto.html" method="get">
+        <form action="index.html" method="get">
           <fieldset class="form-top">
             <legend>
               Agregá tu personaje favorito completando las opciones.
@@ -29,14 +29,16 @@
                 name="nombre"
                 id="nombre"
                 class="input" 
-                minlength="5"
-                maxlength="30"
+                minlength="3"
+                maxlength="20"
+                required
                 oninvalid="setCustomValidity('Por favor, completar correctamente')"/>
             </div>
             <div>
                 <label for="especie">*Especie</label>
-                <select name="especie" id="especie" aria-placeholder="Especie" class="input" >
-                    <option value="desconocido">unknown</option>
+                <select name="especie" id="especie" required class="input" >
+                    <option value="" invalid >Especie</option>
+                    <option value="desconocido">Unknown</option>
                     <option value="humano">Humano</option>
                     <option value="kriptoniano">Kriptoniano</option>
                     <option value="amazona">Amazona</option>
@@ -118,7 +120,7 @@
                 <label for="villano">
                   <input
                     type="radio"
-                    name="villano"
+                    name="personaje"
                     id="villano"
                     value="villano"
                   />

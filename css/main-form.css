@@ -60,6 +60,15 @@
     width: 100%;
 }
 
+#foto::-webkit-file-upload-button{
+    
+    font-size: 16px;
+    height: 32px;
+    text-align: left;
+    margin-right: 5%;
+    width: 55%;
+}
+
 
 .form-bottom {
     display: flex;
@@ -95,11 +104,70 @@
     font-weight: 300;
 }
 
+.form-bottom label{
+    width: 200px;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+}
 .form-bottom input{
 
     margin: 5px 20px 0 0;
 
 }
+
+
+input[type="checkbox"], input[type="radio"]  {
+    appearance: none;
+}
+
+input[type="checkbox"]:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	float: left;
+	border: 2px solid #ccc;
+	background: #fff;
+}
+
+input[type="checkbox"]:checked::before{
+    background-color: #1CD1B0;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    width: 10px;
+    height: 6px;
+    border: 4px solid #ffffff;
+    float: left;
+    margin-left: -18px;
+    border-right: 0;
+    border-top: 0;
+    margin-top: 5px;
+    transform: rotate(-55deg);
+}
+
+
+input[type="radio"]:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+    border-radius: 15px;
+	float: left;
+	border: 2px solid #1CD1B0;
+	background: #fff;
+}
+
+input[type="radio"]:checked::after {
+    content: "";
+    border: 9px solid #1CD1B0;
+    border-radius: 15px;
+    float: left;
+    margin-left: -19px;
+    margin-top: 3px;
+}
+
+
 
 .button{
     background-color: #1CD1B0;
@@ -117,6 +185,11 @@
     background-color:#001D2D;
     color: white;
     transition: 0.3s;
+}
+
+.button:active{
+    font-size: 43px;
+    border: 2px solid #00669F;
 }
 
 
